@@ -6,7 +6,7 @@ pipeline {
       ORG               = 'j0xter'
       APP_NAME          = 'spring28-06'
       CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
-      CHART_REPOSITORY = http://chartmuseum.jx.10.26.10.100.nip.io/
+      CHART_REPOSITORY = 'http://chartmuseum.jx.10.26.10.100.nip.io/'
     }
     stages {
       stage('CI Build and push snapshot') {
